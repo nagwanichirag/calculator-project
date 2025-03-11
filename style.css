@@ -1,0 +1,80 @@
+body {
+  background-color: #f0f8ff;  
+  font-family: "Arial", sans-serif;
+}
+
+/* To center the calculator container */
+.container {
+  margin-top: 50px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator box styling */
+.calculator {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Display styling */
+.display {
+  width: 100%;
+  background-color: #222; 
+  font-size: 32px;
+  padding: 20px;
+  text-align: right;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Button grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+/* Button styling */
+button {
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #e0e0e0;
+}
+
+/* Specific button color schemes */
+button.btn-warning {
+  background-color: #ff9800;
+  color: white;
+}
+
+button.btn-light {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+button.btn-primary {
+  background-color: #2ecc71;
+  color: white;
+}
+
+button.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Two Column Span for 0 button */
+.col-span-2 {
+  grid-column: span 2;
+}
